@@ -1,0 +1,174 @@
+/* --- 01 TYPOGRAPHY SYSTEM - Font sizes (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 - Font weights Default: 400 Medium: 500 Semi-bold: 600 Bold: 700 - Line heights Default: 1 Small: 1.05 Medium: 1.2 Paragraph default: 1.6 Large: 1.8 --- 07 WHITESPACE - Spacing system (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+.section__container,
+.skills__container {
+	height: 100%;
+	max-width: 80%;
+	margin: 0 auto;
+	padding-bottom: 120px;
+}
+@media (max-width: 600px) {
+	.section__container,
+	.skills__container {
+		max-width: 85%;
+	}
+}
+.skills__container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 60px;
+}
+@media (max-width: 900px) {
+	.skills__container {
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+}
+.skills__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* flex-basis: 50%; */
+	/* margin-right: 5rem; */
+}
+@media (max-width: 900px) {
+	.skills__list {
+		margin-right: 0;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.skills__item {
+	flex-direction: column;
+	text-align: center;
+	margin: 2rem;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+@media (max-width: 776px) {
+	.skills__item {
+		margin: 1rem;
+	}
+}
+.skills__item div {
+	width: 90px;
+	height: 90px;
+	/* border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%; */
+	/* background: rgba(255, 255, 255, 0.2); */
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+.skills__item div img {
+	width: 100%;
+	height: 100%;
+}
+.skills__item div:hover {
+	box-shadow: 0 0 18px #fef4f5 94;
+}
+@media (min-width: 2000px) {
+	.skills__item div {
+		width: 150px;
+		height: 150px;
+	}
+}
+@media (max-width: 900px) {
+	.skills__item div {
+		width: 80px;
+		height: 80px;
+	}
+}
+@media (max-width: 776px) {
+	.skills__item div {
+		width: 70px;
+		height: 70px;
+	}
+}
+.skills__item p {
+	font-weight: 500;
+	margin-top: 0.7rem;
+}
+@media (min-width: 2000px) {
+	.skills__item {
+		margin: 1rem 2rem;
+	}
+	.skills__item p {
+		margin-top: 1rem;
+	}
+}
+.skills-certificates {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+@media screen and (max-width: 900px) {
+	.skills-certificates {
+		width: 80%;
+		margin: 7rem auto 0;
+	}
+}
+.skills-certificates .skills-cer {
+	display: flex;
+}
+.skills-certificates .skills-cer .skills-cer-icon {
+	margin-right: 3rem;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	cursor: pointer;
+}
+@media screen and (max-width: 450px) {
+	.skills-certificates .skills-cer .skills-cer-icon {
+		margin-right: 2rem;
+	}
+}
+.skills-certificates .skills-cer .skills-cer-icon:hover {
+	color: #00dbd8;
+}
+.skills-certificates .skills-cer .skills-cer-text h4 {
+	margin-bottom: 15px;
+	border-bottom: 1px solid #00dbd8;
+	font-weight: 500;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+.skills-certificates .skills-cer .skills-cer-text h4:hover {
+	border-bottom: 1px solid transparent;
+}
+.skills-certificates .skills-cer .skills-cer-text p {
+	text-transform: uppercase;
+}
+.skills-tooltip {
+	backdrop-filter: blur(15px) !important;
+	-webkit-backdrop-filter: blur(5px) !important;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	max-width: 300px !important;
+	background-color: rgba(255, 255, 255, 0.2) !important;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+	border-radius: 5px !important;
+	padding: 1rem !important;
+	color: #fff !important;
+	text-align: center !important;
+	line-height: 1.5 !important;
+	opacity: 1 !important;
+}
+@media screen and (min-width: 2000px) {
+	.skills-tooltip {
+		font-size: 1.75rem !important;
+		max-width: 500px !important;
+		line-height: 2 !important;
+	}
+}
