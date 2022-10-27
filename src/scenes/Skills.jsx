@@ -15,7 +15,7 @@ import tailwind from "../assets/skills/tailwind.png";
 import typescript from "../assets/skills/typescript.png";
 import docker from "../assets/skills/docker.png";
 import socket from "../assets/skills/socket.png";
-import c from "../assets/skills/c.png";
+import python from "../assets/skills/python.png";
 
 const transition = {
 	duration: 0.3,
@@ -107,9 +107,9 @@ const Skills = () => {
 						</div>
 						<div className="skills__item app__flex">
 							<div className="app__flex">
-								<img src={c} alt="c" />
+								<img src={python} alt="python" />
 							</div>
-							<p className="skill-name">C Language</p>
+							<p className="skill-name">Python</p>
 						</div>
 						{/* <div className="skills__item app__flex">
 							<div className="app__flex">
