@@ -103,6 +103,31 @@ const Projects = () => {
 					</div>
 
 					<Project
+						title="Login/Logout demo"
+						description="A demo showing the flow of a Login/Logout process using the MERN stack + tailwindcss"
+					/>
+					<div className="flex justify-center gap-3 mt-3 mb-5">
+						<a
+							href="https://www.loom.com/share/1f4fda5a89f84130971deb638d6e8b00"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="bg-violet-800 pt-2 pb-2 pl-5 pr-5 rounded-md font-monoton">
+								Demo
+							</button>
+						</a>
+						<a
+							href="https://github.com/Aymanemadidi/Login-Logout-flow"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<button className="bg-violet-800 pt-2 pb-2 pl-5 pr-5 rounded-md font-monoton">
+								Repo
+							</button>
+						</a>
+					</div>
+
+					<Project
 						title="memory game"
 						description="A memory game inspired by 1337's online tests"
 					/>
